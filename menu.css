@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Luckiest+Guy&display=swap');
 
+
 body {
   background-color: black;
   font-family: 'Lilita One', sans-serif, 'Luckiest Guy', cursive;
@@ -32,11 +33,10 @@ body {
 .divProducto:hover {
   transform: scale(1.1);
   cursor: pointer;
-  -webkit-transition: transform 350ms ease-in-out;
 
 }
 
-.btn:hover {
+.btn-outline-warning:hover {
   background-image: linear-gradient(
     to right,
     #462523 0,
@@ -48,4 +48,55 @@ body {
     #462523 100%
     );
   
+}
+
+#pedido {
+  position: fixed;
+  right: 5%;
+  top: 2%;
+  z-index: 3;
+  background-color: gold;
+}
+
+.offcanvas {
+  background-color: black;
+  color: #f6e27a;
+  border-color: #f6e27a !important;
+}
+
+.btn-close {
+  background-color: #f6e27a;
+}
+
+.cartProduct {
+  background-color: black;
+}
+
+.quantityInput {
+  background-color: black;
+  border-color: #f6e27a;
+  border-radius: 20%;
+  color: #f6e27a;
+}
+
+.title {
+  color: #f6e27a;
+}
+
+.form-check-input {
+  background-color: #f6e27a;
+  color: black;
+}
+
+.form-check-input:checked {
+  outline: 2px solid #f6e27a;
+  background-color: black;
+}
+
+label {
+  color: #f6e27a;
+}
+
+.subtotal {
+  color: #f6e27a;
 }

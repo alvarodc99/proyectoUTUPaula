@@ -6,8 +6,11 @@
   <title>The Burger truck</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="menu.css">
+  <script src="https://kit.fontawesome.com/eb4155e3be.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+  <button class="btn rounded-circle" id="pedido" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class=" fa-2x fa-solid fa-burger fa-beat" style="color: black;"></i></button>
   <h1 class="display-1 text-center gold-text pt-5">MENU</h1>
   <div id="productos" class="list-group container p-3">
     <div class="divProducto row list-group-item rounded d-flex justify-content-between mt-3 gold-text ">
@@ -15,7 +18,8 @@
         <img src="./images/bacon.jpg" class="product-image">
     </div>
     <div class="col-lg-6">
-        <h3 class="pt-2">Bacon burger - $240</h3>
+        <h3 class="pt-2 title">Bacon burger</h3>
+        <h3 class="price">$240</h3>
         <p>Una explosión de sabor con crujiente bacon y carne jugosa en cada bocado.</p>
     </div>
     <div class="col-lg-3 "><button class="mt-lg-5 btn btn-outline-warning btn-lg">+ Encargar</button></div>
@@ -25,7 +29,8 @@
         <img src="./images/cuartolibra.jpg" class="product-image">
     </div>
     <div class="col-lg-6">
-        <h3 class="pt-2">Cuarto de libra - $240</h3>
+        <h3 class="pt-2 title">Cuarto de libra</h3>
+        <h3 class="price">$240</h3>
         <p>Una delicia cuadrada de carne jugosa, queso derretido y aderezos frescos.</p>
     </div>
     <div class="col-lg-3 "><button class="mt-lg-5 btn btn-outline-warning btn-lg">+ Encargar</button></div>
@@ -35,7 +40,8 @@
         <img src="images/XL.jpg" class="product-image">
     </div>
     <div class="col-lg-6">
-        <h3 class="pt-2">Clasica XL - $260</h3>
+        <h3 class="pt-2 title">Clasica XL</h3>
+        <h3 class="price">$260</h3>
         <p>Una obra maestra de la simplicidad, con carne a la parrilla, lechuga crujiente y una salsa secreta en un tamaño que saciará tu apetito.</p>
     </div>
     <div class="col-lg-3 "><button class="mt-lg-5 btn btn-outline-warning btn-lg">+ Encargar</button></div>
@@ -45,7 +51,8 @@
         <img src="images/bbq.jpg" class="product-image">
     </div>
     <div class="col-lg-6">
-        <h3 class="pt-2">The BBQ - $260</h3>
+        <h3 class="pt-2 title">The BBQ</h3>
+        <h3 class="price">$260</h3>
         <p>Una fiesta de sabores ahumados con salsa barbacoa, cebolla caramelizada y carne a la parrilla.</p>
     </div>
     <div class="col-lg-3 "><button class="mt-lg-5 btn btn-outline-warning btn-lg">+ Encargar</button></div>
@@ -53,14 +60,28 @@
     <div class="divProducto row list-group-item rounded d-flex justify-content-between mt-3 gold-text">
       <div class="col-lg-3 col-sm-12 col-md-6">
         <img src="images/burgertruck.jpg" class="product-image">
-    </div>
-    <div class="col-lg-6">
-        <h3 class="pt-2">The burger truck - $280</h3>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="pt-2 title">The burger truck</h3>
+        <h3 class="price">$280</h3>
         <p>La esencia de la comida callejera en una hamburguesa, con una mezcla única de ingredientes que te llevará directo a la feria de sabores.</p>
-    </div>
-    <div class="col-lg-3 "><button class="mt-lg-5 btn btn-outline-warning btn-lg">+ Encargar</button></div>
+      </div>
+      <div class="col-lg-3 "><button class="mt-lg-5 btn btn-outline-warning btn-lg">+ Encargar</button></div>
     </div>
   </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">TU PEDIDO</h5>
+      <button type="button" class="btn-close text-reset rounded-circle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="list-group cartContent container" id="cartContent">
+      </div>
+      <div>Total: <h5 class="display-5 gold-text" id="totalPrice"></h5></div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
