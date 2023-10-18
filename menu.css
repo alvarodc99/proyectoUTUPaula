@@ -1,11 +1,8 @@
-@font-face {
-  font-family: LuckiestGuy;
-  src: url(LuckiestGuy-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 body {
   background-color: black;
-  font-family: LuckiestGuy;
+  font-family: 'Luckiest Guy';
 }
 
 .product-image {
