@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 body {
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
   background-color: black;
   font-family: 'Luckiest Guy';
 }
 
-.product-image {
-  border: 2px solid #9b870c;
-  width: 100%;
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 .gold-text {
